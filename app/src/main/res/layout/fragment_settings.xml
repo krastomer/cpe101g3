@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/frame_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="1dp">
+
+            <ImageView
+                android:id="@+id/iv_profile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/this_pic"
+                app:srcCompat="@drawable/ic_user" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:text="@string/str_username"
+                android:textSize="22sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frame_emer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/frame_photo"
+            android:background="@color/colorDark"
+            tools:layout_editor_absoluteX="20dp">
+
+            <TextView
+                android:id="@+id/tv_emer"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_emercy" />
+
+            <EditText
+                android:id="@+id/et_number"
+                android:layout_width="200dp"
+                android:textColor="@color/colorWhite"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="10dp"
+                android:inputType="phone" />
+
+            <Button
+                android:id="@+id/btn_update_emer"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:background="@color/colorPrimaryIcon"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="10dp"
+                android:text="@string/str_update" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frame_device"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/frame_emer"
+            android:background="@color/colorDark"
+            tools:layout_editor_absoluteX="20dp">
+
+            <TextView
+                android:id="@+id/tv_device"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_device" />
+
+            <EditText
+                android:id="@+id/et_device"
+                android:layout_width="200dp"
+                android:textColor="@color/colorWhite"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="10dp" />
+
+            <Button
+                android:id="@+id/btn_update_device"
+                android:layout_width="wrap_content"
+                android:background="@color/colorPrimaryIcon"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="10dp"
+                android:text="@string/str_update" />
+
+        </FrameLayout>
+
+        <CheckBox
+            android:id="@+id/cb_alert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/str_alert"
+            android:textSize="14sp"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frame_device" />
+
+        <CheckBox
+            android:id="@+id/cb_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:layout_marginStart="20dp"
+            android:text="@string/str_emercall"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cb_alert" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
