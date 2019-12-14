@@ -89,6 +89,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "234181888048-9sdsh8tnusptr85rd8eq67ddfhdibt6l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pewpew.final_app",
+            "certificate_hash": "6bdeed85ad38adddd373dc301c81e62ea20f2ea0"
+          }
+        },
+        {
           "client_id": "234181888048-lnq2b288quajsviuv18klpkirlju0j8q.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

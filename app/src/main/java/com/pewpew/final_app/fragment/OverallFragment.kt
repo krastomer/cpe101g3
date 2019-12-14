@@ -13,34 +13,38 @@ import android.widget.TextView
 import ir.farshid_roohi.linegraph.ChartEntity
 
 import com.pewpew.final_app.R
+import ir.farshid_roohi.linegraph.ChartEntity
 import ir.farshid_roohi.linegraph.LineChart
-import kotlinx.android.synthetic.main.fragment_overall.view.*
+import kotlinx.android.synthetic.main.fragment_overall.*
+import java.util.ArrayList
 
 class OverallFragment : Fragment() {
 
-    //   private var lineChart : LineChart = findViewById(R.id.lineChart)
+  /*  override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        chartView.lineColor = Color.BLACK
+    }*/
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
-        var MainrootView: View = inflater.inflate(R.layout.fragment_overall, container, false)
-
-        val entity = ChartEntity(Color.WHITE,graph1)
-
-        var lineChart = MainrootView.findViewById<LineChart>(R.id.lineChart)
-
-        val list = ArrayList<ChartEntity>()
-        list.add(entity)
-        lineChart.setLegend(legendArr)
-        lineChart.setList(list)
-        Log.e("MainActivity",lineChart.toString())
         return inflater.inflate(R.layout.fragment_overall, container, false)
     }
 
-    private val graph1 = floatArrayOf(1f, 1f, 180f, 1f, 324000f, 0f, 180f, 15000f, 1200f, 5000f, 33000f)
-    private val legendArr = arrayListOf("05/21", "05/22", "05/23", "05/24", "05/25", "05/26", "05/27", "05/28", "05/29", "05/30", "05/31")
+/*
+    fun createGraph(){
+        val graph1 = floatArrayOf(113000f, 183000f, 188000f, 695000f, 324000f, 230000f, 188000f, 15000f, 126000f, 5000f, 33000f)
+        val legendArr = arrayOf("05/21", "05/22", "05/23", "05/24", "05/25", "05/26", "05/27", "05/28", "05/29", "05/30", "05/31")
 
+        val entity = ChartEntity(Color.WHITE,graph1)
+
+        val list = ArrayList<ChartEntity>()
+        list.addAll(list)
+        Log.e("OverallFragment",list.toString())
+     //   chartView.setLegend(legendArr)
+      //  chartView.setList(list)
+    }*/
 
 }
+
