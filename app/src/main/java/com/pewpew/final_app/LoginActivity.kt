@@ -66,10 +66,10 @@ class LoginActivity : AppCompatActivity() {
         auth.signInWithCredential(credential)
             .addOnCompleteListener(this) {task ->
                 if(task.isSuccessful) {
-                    Toast.makeText(applicationContext,"Success",Toast.LENGTH_SHORT).show()
+                    Toast.makeText(applicationContext,"Login completed!",Toast.LENGTH_SHORT).show()
                     startActivity(Intent(this,MainActivity::class.java))
                 } else {
-                    Toast.makeText(applicationContext,"Not Success",Toast.LENGTH_SHORT).show()
+                    Toast.makeText(applicationContext,"Login uncompleted!",Toast.LENGTH_SHORT).show()
                 }
             }
     }
