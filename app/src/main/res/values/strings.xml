@@ -13,5 +13,4 @@
     <string name="str_device">Device ID : </string>
     <string name="str_alert">Alarm when alcohol is high</string>
     <string name="str_emercall">Emergency call when alcohol is high</string>
-    <string name="str_signout">Sign Out</string>
 </resources>

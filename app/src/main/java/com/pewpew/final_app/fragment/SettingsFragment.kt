@@ -1,7 +1,6 @@
 package com.pewpew.final_app.fragment
 
 import android.content.Context
-import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.util.Log
@@ -9,21 +8,17 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
-import com.google.android.gms.auth.api.signin.GoogleSignInClient
-import com.google.firebase.auth.FirebaseAuth
-import com.pewpew.final_app.LoginActivity
-import com.pewpew.final_app.MainActivity
 
 import com.google.firebase.database.FirebaseDatabase
 import android.view.View.OnClickListener;
 import android.widget.Button
 import android.widget.EditText
+import com.google.android.gms.auth.api.signin.GoogleSignInClient
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.ValueEventListener
 import com.pewpew.final_app.R
-import kotlinx.android.synthetic.main.fragment_settings.*
 
 
     private lateinit var auth: FirebaseAuth
@@ -32,6 +27,7 @@ import kotlinx.android.synthetic.main.fragment_settings.*
 
 class SettingsFragment : Fragment() {
     val uid = "12344"
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -82,12 +78,4 @@ class SettingsFragment : Fragment() {
         return rootView
     }
 
-  /*  private fun signOutBtn(){
-        auth.signOut()
-        val intent = Intent(activity,LoginActivity::class.java)
-        googleSignInClient.revokeAccess().addOnCompleteListener
-        googleSignInClient.signOut().addOnCompleteListener {
-            startActivity(intent)
-        }
-    }*/
 }

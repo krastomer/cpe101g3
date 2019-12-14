@@ -65,7 +65,7 @@ class HistoryFragment : Fragment() {
         myRef.addValueEventListener(object: ValueEventListener {
             override fun onDataChange(p0: DataSnapshot) {
 //                val value = p0!!.getValue(String::class.java)
-                val value = p0!!.value
+          //      val value = p0?.value
                 var i:Int=0
                 for(h in p0.children){
                     val day:String = h.child("time").child("day").value.toString()

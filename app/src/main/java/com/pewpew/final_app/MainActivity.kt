@@ -17,15 +17,12 @@ class MainActivity : AppCompatActivity() {
             R.id.btn_overall ->{
                 replaceFragment(OverallFragment())
                 return@OnNavigationItemSelectedListener true
-                println("overall")
             }
             R.id.btn_history ->{
-                println("history")
                 replaceFragment(HistoryFragment())
                 return@OnNavigationItemSelectedListener true
             }
             R.id.btn_settings ->{
-                println("settings")
                 replaceFragment(SettingsFragment())
                 return@OnNavigationItemSelectedListener true
             }
