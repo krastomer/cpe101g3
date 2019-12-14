@@ -39,4 +39,22 @@
             tools:layout_editor_absoluteX="0dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:paddingLeft="8dp"
+            android:paddingTop="16dp"
+            android:paddingRight="8dp"
+            android:text="Monthly Static : "
+            android:textSize="24sp" />
+
+        <ir.farshid_roohi.linegraph.LineChart
+            android:id="@+id/lineChart"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:background="#FFFFFF"
+            android:clickable="false"
+            android:orientation="vertical" />
+    </LinearLayout>
 </FrameLayout>

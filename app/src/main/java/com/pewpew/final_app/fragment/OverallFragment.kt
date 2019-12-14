@@ -9,6 +9,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
+import ir.farshid_roohi.linegraph.ChartEntity
 
 import com.pewpew.final_app.R
 import ir.farshid_roohi.linegraph.ChartEntity
@@ -27,7 +29,6 @@ class OverallFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
         return inflater.inflate(R.layout.fragment_overall, container, false)
     }
 

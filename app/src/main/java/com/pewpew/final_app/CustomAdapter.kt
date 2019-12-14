@@ -15,7 +15,6 @@ import kotlinx.android.synthetic.main.list_layout.view.*
 /**
  * Created by Belal on 6/19/2017.
  */
-
 class CustomAdapter(val userList: ArrayList<User>) : RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
 
     //this method is returning the view for each item in the list
