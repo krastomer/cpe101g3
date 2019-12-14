@@ -17,6 +17,7 @@ import com.pewpew.final_app.MainActivity
 
 import com.google.firebase.database.FirebaseDatabase
 import android.view.View.OnClickListener;
+import android.widget.Button
 import android.widget.EditText
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -57,7 +58,7 @@ class SettingsFragment : Fragment() {
             }
         })
         ///
-        val phoneupdate:Button = rootView.findViewById<View>(R.id.phoneupdate) as Button
+        val phoneupdate: Button = rootView.findViewById<View>(R.id.phoneupdate) as Button
         phoneupdate.setOnClickListener{
                 var newphone = rootView.findViewById<EditText>(R.id.phonetxt).text.toString()
                 val database = FirebaseDatabase.getInstance()

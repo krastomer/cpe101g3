@@ -10,11 +10,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import ir.farshid_roohi.linegraph.ChartEntity
 
 import com.pewpew.final_app.R
-import ir.farshid_roohi.linegraph.ChartEntity
-import ir.farshid_roohi.linegraph.LineChart
 import kotlinx.android.synthetic.main.fragment_overall.*
 import java.util.ArrayList
 
