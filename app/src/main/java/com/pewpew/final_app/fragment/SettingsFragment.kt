@@ -17,6 +17,7 @@ import com.pewpew.final_app.MainActivity
 
 import com.google.firebase.database.FirebaseDatabase
 import android.view.View.OnClickListener;
+import android.widget.Button
 import android.widget.EditText
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -25,9 +26,9 @@ import com.pewpew.final_app.R
 import kotlinx.android.synthetic.main.fragment_settings.*
 
 
-    private lateinit var auth: FirebaseAuth
+private lateinit var auth: FirebaseAuth
 
-    private lateinit var googleSignInClient: GoogleSignInClient
+private lateinit var googleSignInClient: GoogleSignInClient
 
 class SettingsFragment : Fragment() {
     val uid = "12344"
@@ -57,13 +58,13 @@ class SettingsFragment : Fragment() {
             }
         })
         ///
-        val phoneupdate:Button = rootView.findViewById<View>(R.id.phoneupdate) as Button
+        val phoneupdate: Button = rootView.findViewById<View>(R.id.phoneupdate) as Button
         phoneupdate.setOnClickListener{
-                var newphone = rootView.findViewById<EditText>(R.id.phonetxt).text.toString()
-                val database = FirebaseDatabase.getInstance()
-                val myRef = database.getReference("users").child("users-"+uid).child("phone")
-                myRef.setValue(newphone)
-                Log.d("MainActivity","Update Phone Success")
+            var newphone = rootView.findViewById<EditText>(R.id.phonetxt).text.toString()
+            val database = FirebaseDatabase.getInstance()
+            val myRef = database.getReference("users").child("users-"+uid).child("phone")
+            myRef.setValue(newphone)
+            Log.d("MainActivity","Update Phone Success")
 
 
         }
@@ -81,12 +82,12 @@ class SettingsFragment : Fragment() {
         return rootView
     }
 
-  /*  private fun signOutBtn(){
-        auth.signOut()
-        val intent = Intent(activity,LoginActivity::class.java)
-        googleSignInClient.revokeAccess().addOnCompleteListener
-        googleSignInClient.signOut().addOnCompleteListener {
-            startActivity(intent)
-        }
-    }*/
+    /*  private fun signOutBtn(){
+          auth.signOut()
+          val intent = Intent(activity,LoginActivity::class.java)
+          googleSignInClient.revokeAccess().addOnCompleteListener
+          googleSignInClient.signOut().addOnCompleteListener {
+              startActivity(intent)
+          }
+      }*/
 }

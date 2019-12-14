@@ -10,20 +10,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import ir.farshid_roohi.linegraph.ChartEntity
 
 import com.pewpew.final_app.R
-import ir.farshid_roohi.linegraph.ChartEntity
-import ir.farshid_roohi.linegraph.LineChart
 import kotlinx.android.synthetic.main.fragment_overall.*
 import java.util.ArrayList
 
 class OverallFragment : Fragment() {
 
-  /*  override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        chartView.lineColor = Color.BLACK
-    }*/
+    /*  override fun onCreate(savedInstanceState: Bundle?) {
+          super.onCreate(savedInstanceState)
+          chartView.lineColor = Color.BLACK
+      }*/
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

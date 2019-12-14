@@ -6,55 +6,45 @@
     android:layout_height="match_parent"
     tools:context=".fragment.OverallFragment">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
+
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <TextView
-            android:id="@+id/tv_overall"
-            android:layout_width="wrap_content"
-
-
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="28dp"
-            android:text="@string/str_overall"
-            android:textSize="40sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ir.farshid_roohi.linegraph.LineChart
-            android:id="@+id/chartView"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:layout_margin="20dp"
-            android:layout_marginTop="20dp"
-            app:chart_bg_color="@color/colorPrimaryBackground"
-            app:chart_padding_bottom="40dp"
-            app:chart_padding_left="20dp"
-            app:chart_padding_right="20dp"
-            app:chart_padding_top="20dp"
-            app:layout_constraintTop_toBottomOf="@+id/tv_overall"
-            app:chart_line_color="@color/colorPrimaryIcon"
-            tools:layout_editor_absoluteX="0dp" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="47dp"
-            android:paddingLeft="8dp"
-            android:paddingTop="16dp"
-            android:paddingRight="8dp"
-            android:text="Monthly Static : "
-            android:textSize="24sp" />
+            <TextView
+                android:id="@+id/tv_overall"
+                android:layout_width="wrap_content"
 
-        <ir.farshid_roohi.linegraph.LineChart
-            android:id="@+id/lineChart"
-            android:layout_width="match_parent"
-            android:layout_height="500dp"
-            android:background="#FFFFFF"
-            android:clickable="false"
-            android:orientation="vertical" />
+
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="28dp"
+                android:text="@string/str_overall"
+                android:textSize="40sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="16dp"
+                android:paddingRight="8dp"
+                android:text="Monthly Static : "
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.051" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
     </LinearLayout>
 </FrameLayout>
