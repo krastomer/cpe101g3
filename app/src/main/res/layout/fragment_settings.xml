@@ -25,12 +25,13 @@
                 app:srcCompat="@drawable/ic_user" />
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/username"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|end"
                 android:text="@string/str_username"
-                android:textSize="22sp" />
+                android:textAlignment="textEnd"
+                android:textSize="30sp" />
         </FrameLayout>
 
         <FrameLayout
@@ -135,16 +136,14 @@
             app:layout_constraintTop_toBottomOf="@+id/cb_alert" />
 
         <Button
-            android:id="@+id/btn_signOut"
+            android:text="@string/str_signout"
+            android:background="@color/colorPrimaryBackground"
+            android:id="@+id/btn_signout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="36dp"
-            android:background="@color/colorPrimaryBackground"
-            android:text="@string/str_signout"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="28dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cb_call"
-            app:layout_constraintVertical_bias="0.08" />
-
+            app:layout_constraintTop_toBottomOf="@+id/cb_call" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
