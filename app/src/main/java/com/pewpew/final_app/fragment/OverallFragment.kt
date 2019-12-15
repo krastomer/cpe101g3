@@ -151,6 +151,14 @@ class OverallFragment : Fragment() {
         myRef.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(p0: DataSnapshot) {
                 var i: Int = 0
+                totalmonth=0
+                totalyear=0
+                month1=0
+                month2=0
+                month3=0
+                year1=0
+                year2=0
+                year3=0
 //                Log.d("MainActivity",boardid)
                 for (h in p0.children) {
                     if (h.child("uid").value.toString() == boardid) {
