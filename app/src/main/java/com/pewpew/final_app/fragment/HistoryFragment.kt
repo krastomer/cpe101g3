@@ -38,6 +38,7 @@ class HistoryFragment : Fragment() {
     var boardid:String =""
 
     fun getNumberThenPhone(){
+        if(activity==null)return
         val database = FirebaseDatabase.getInstance()
         val ref = database.getReference("users/users-"+uid)
         ref.addValueEventListener(object: ValueEventListener{
@@ -110,8 +111,10 @@ class HistoryFragment : Fragment() {
 
                             if(h.child("time").child("day").value.toString()== LocalDate.now().dayOfMonth.toString()){
                                 if(h.child("time").child("hour").value.toString().toDouble()>= LocalTime.now().hour.toString().toDouble()-2){
-                                    Log.w("MainActivity","Found Unusual Activity")
-                                    getNumberThenPhone()
+                                    if(h.child("level").value.toString().toDouble()>50) {
+                                        Log.w("MainActivity", "Found Unusual Activity")
+                                        getNumberThenPhone()
+                                    }
                                 }
                             }
 
