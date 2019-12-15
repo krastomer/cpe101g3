@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">final_app</string>
+    <string name="app_name">Safety Drunk Driver</string>
     <string name="str_overall">Overall</string>
     <string name="str_history">History</string>
     <string name="str_settings">Settings</string>
