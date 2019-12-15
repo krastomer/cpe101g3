@@ -25,12 +25,13 @@
                 app:srcCompat="@drawable/ic_user" />
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/username"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|end"
                 android:text="@string/str_username"
-                android:textSize="22sp" />
+                android:textAlignment="textEnd"
+                android:textSize="30sp" />
         </FrameLayout>
 
         <FrameLayout
