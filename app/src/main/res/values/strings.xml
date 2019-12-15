@@ -13,5 +13,16 @@
     <string name="str_device">Device ID : </string>
     <string name="str_alert">Alarm when alcohol is high</string>
     <string name="str_emercall">Emergency call when alcohol is high</string>
+    <string name="register" />
+    <string name="registertxt">Register</string>
+    <string name="name">Name :</string>
+    <string name="boardid">Board ID :</string>
+    <string name="detail" />
+    <string name="info">Please fill information below</string>
+    <string name="month">Monthly Static</string>
+    <string name="good"><![CDATA[<30]]></string>
+    <string name="warn"><![CDATA[<50]]></string>
+    <string name="bad"><![CDATA[>5]]></string>
+    <string name="badd"><![CDATA[>50]]></string>
     <string name="str_signout">Sign Out</string>
 </resources>
