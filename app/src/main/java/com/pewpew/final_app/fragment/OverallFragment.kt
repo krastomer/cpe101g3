@@ -5,8 +5,6 @@ import android.content.Intent
 import android.graphics.Color
 import android.net.Uri
 import android.os.Bundle
-import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -37,6 +35,22 @@ class OverallFragment : Fragment() {
         super.onCreate(savedInstanceState)
         chartView.lineColor = Color.BLACK
     }*/
+import androidx.core.view.get
+import androidx.fragment.app.Fragment
+import com.github.mikephil.charting.charts.LineChart
+import com.github.mikephil.charting.data.Entry
+import com.github.mikephil.charting.data.LineData
+import com.github.mikephil.charting.data.LineDataSet
+import com.github.mikephil.charting.interfaces.datasets.ILineDataSet
+import com.pewpew.final_app.R
+
+
+class OverallFragment : Fragment() {
+
+    private lateinit var dataValue : Entry
+    private lateinit var lineDataSet : LineDataSet
+    private lateinit var dataSet : ILineDataSet
+    private lateinit var data2 : LineData
 
     val user = FirebaseAuth.getInstance().currentUser
     var uid:String = "5403ad4f-ced2-4845-8211-ccd6226cbf24"
@@ -213,14 +227,16 @@ class OverallFragment : Fragment() {
         val graph1 = floatArrayOf(113000f, 183000f, 188000f, 695000f, 324000f, 230000f, 188000f, 15000f, 126000f, 5000f, 33000f)
         val legendArr = arrayOf("05/21", "05/22", "05/23", "05/24", "05/25", "05/26", "05/27", "05/28", "05/29", "05/30", "05/31")
 
-        val entity = ChartEntity(Color.WHITE,graph1)
+   //     lineDataSet.addEntry(dataValue)
 
-        val list = ArrayList<ChartEntity>()
-        list.addAll(list)
-        Log.e("OverallFragment",list.toString())
-     //   chartView.setLegend(legendArr)
-      //  chartView.setList(list)
-    }*/
+     //   dataSet.addEntry(dataValue)
+
+
+    //    data2.addDataSet(dataSet)
+     //   graph.data = data2
+        graph.invalidate()
+        return view
+    }
+
 
 }
-

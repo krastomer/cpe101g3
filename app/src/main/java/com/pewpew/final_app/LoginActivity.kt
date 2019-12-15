@@ -26,6 +26,7 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
+
         signInButton.setOnClickListener {
             signIn()
            // startActivity(Intent(this,MainActivity::class.java))
@@ -80,5 +81,10 @@ class LoginActivity : AppCompatActivity() {
 
     companion object {
         private const val RC_SIGN_IN = 9001
+    }
+
+    override fun onStop() {
+        super.onStop()
+        finish()
     }
 }

@@ -85,4 +85,8 @@ class MainActivity : AppCompatActivity() {
         fragmentTransaction.commit()
     }
 
+    override fun onStop() {
+        super.onStop()
+        finish()
+    }
 }
